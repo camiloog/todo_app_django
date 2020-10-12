@@ -17,12 +17,10 @@
 - Create a virtual environment:
 
   ```
-  mkdir .env
-  cd .env
-  virtualenv venv
+  python -m venv .venv
   ```
 
-- To activate the environment go to the `./.env/venv/Scripts` folder and execute the `activate` script:
+- To activate the environment go to the `.venv/Scripts` folder and execute the `activate` script:
 
   ```
   # from cmd or powershell:
