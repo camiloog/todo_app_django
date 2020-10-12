@@ -24,4 +24,10 @@ This is a simple app built with django. To review the development process from c
    pip install -r requirements.txt
    ```
 
+1. Start the app by running:
+
+   ```
+   python manage.py runserver
+   ```
+
 1. Open the browser on [http://127.0.0.1:8000](http://127.0.0.1:8000)
