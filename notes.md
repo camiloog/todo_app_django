@@ -77,3 +77,34 @@
   cd todo_app
   python manage.py startapp todos
   ```
+
+## Create model and update database
+
+- Create a model on the _todos_ app by adding the model to the `todos/models.py`:
+
+  ```
+  class Todo(models.Model):
+      content = models.TextField()
+  ```
+
+- Create the migration with the new model by running:
+
+  ```
+  python manage.py makemigrations todos
+  ```
+
+  This will create the first migration on `todos/migrations/`
+
+- To review the sql command needed for a migration you can run:
+
+  ```
+  python manage.py sqlmigrate todos MIGRATION_ID
+  ```
+
+  This will return the sql code.
+
+- To update the database just run:
+
+  ```
+  python manage.py migrate
+  ```
